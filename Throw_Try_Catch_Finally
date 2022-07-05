@@ -1,0 +1,65 @@
+//throw
+
+/*function verificaPalindromo(string) {
+    if (!string) throw 'String Inválida'; {
+        return string === string.split('').reverse().join('');
+    }
+}
+
+console.log(verificaPalindromo('AMA'));
+
+//return
+
+function verificaPalindromo(string) {
+    if (!string) return 'String Inválida'; {
+        return string === string.split('').reverse().join('');
+    }
+}
+
+console.log(verificaPalindromo('AMAR'));
+
+//Try ... Catch
+
+function verificaPalindromo(string) {
+    if (!string) throw 'String Inválida' 
+        return string === string.split('').reverse().join('');
+    
+}
+
+function tryCatchExemplo(string) {
+    try {
+        verificaPalindromo(string);
+    } catch (e) {
+        console.log(e);
+        throw(e);
+    }
+    
+}
+
+tryCatchExemplo('');*/
+
+//Finally
+
+function verificaPalindromo(string) {
+    if (!string) throw 'String Inválida'; 
+    
+    return string === string.split('').reverse().join('');
+    
+}
+
+function tryCatchExemplo(string) {
+    try {
+        return verificaPalindromo(string);
+    }
+    catch (e) {
+        console.log(e);
+        throw e;
+    }
+    finally {
+        console.log('A string enviada foi: ' + string);
+    }
+    
+}
+
+tryCatchExemplo('ala');
+console.log(verificaPalindromo('ala'));
