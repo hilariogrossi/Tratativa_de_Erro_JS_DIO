@@ -1,1 +1,1 @@
-# Tratativa_de_Erro_JS_DIO
+# Tratativa de Erro no JavaScript - DIO
