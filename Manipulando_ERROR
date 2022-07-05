@@ -1,0 +1,12 @@
+//O objeto Error
+
+new Error(message, fileName, lineNumber)
+//todos os objetos são opcionais (message, fileName, lineNumber)
+const MeuErro = new Error('Mensagem Inválida');
+
+throw MeuErro;
+
+const MeuErro2 = new Error('Mensagem Inválida');
+MeuErro.name = 'Invalid Message';
+
+throw MeuErro2;
